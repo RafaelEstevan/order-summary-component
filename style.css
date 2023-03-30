@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --activate: hsl(245, 83%, 68%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Red Hat Display';
+}
+
+body{
+    background: url('images/pattern-background-desktop.svg') var(--pale-blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.card{
+    width: 450px;
+    height: 700px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+}
+
+.bg{
+    background: url('images/illustration-hero.svg');
+    height: 220px;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--dark-blue);
+    margin-top: 30px;
+}
+
+p{
+    width: 80%;
+    text-align: center;
+    color: var(--desaturated-blue);
+    margin-top: 20px;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.price{
+    height: 100px;
+    width: 70%;
+    border-radius: 10px;
+    background: var(--very-pale-blue);
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.price-info{
+    display: flex;
+    flex-direction: column;
+    color: var(--desaturated-blue);
+}
+
+.price-description{
+    color: var(--dark-blue);
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.change{
+    color: var(--bright-blue);
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.change:hover{
+    color: var(--activate);
+}
+
+.btn{
+    height: 50px;
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    background: var(--bright-blue);
+    margin-top: 25px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: var(--activate);
+    transition: ease-in-out 0.4s;
+}
+
+
+.order{
+    margin-top: 25px;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    cursor: pointer;
+}
+.order:hover{
+    color: var(--dark-blue);
+}
